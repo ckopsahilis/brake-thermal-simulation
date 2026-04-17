@@ -34,24 +34,6 @@ The simulation uses the following values:
 - Time steps: $N_t = 400$
 - Final simulation time: $t_{\max} = 10.0$ s
 
-## Installation
-
-Clone the repository and install the Python dependencies:
-
-```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
-pip install -r requirements.txt
-```
-
-If you prefer an isolated environment, create and activate a virtual environment first:
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-```
-
 ## Run the Simulation
 
 Run the main script directly:
