@@ -2,19 +2,19 @@
 
 A compact, fully local Python simulation of transient heat diffusion in an F1 brake disc. The model uses a vectorized Finite Difference Method (FDM) with an explicit FTCS scheme in polar coordinates to evolve the temperature field and render a 10-second MP4 animation.
 
-Preview video: [[brake_disc_10s.mp4](brake_disc_10s.mp4)](https://github.com/user-attachments/assets/86b498da-6611-4580-9641-7eac6705f6c3)
+Preview video:
+
+<video src="https://github.com/user-attachments/assets/86b498da-6611-4580-9641-7eac6705f6c3" controls width="900"></video>
+
+If the embedded player does not load, open the video directly:
+[Watch preview video](https://github.com/user-attachments/assets/86b498da-6611-4580-9641-7eac6705f6c3)
 
 ## Physics & Math
 
 The temperature field $T(r, \theta, t)$ is governed by the 2D heat equation in polar coordinates:
 
 $$
-\frac{\partial T}{\partial t}
-= a\left(
-\frac{\partial^2 T}{\partial r^2}
-+ \frac{1}{r}\frac{\partial T}{\partial r}
-+ \frac{1}{r^2}\frac{\partial^2 T}{\partial \theta^2}
-\right)
+\frac{\partial T}{\partial t} = a\left(\frac{\partial^2 T}{\partial r^2} + \frac{1}{r}\frac{\partial T}{\partial r} + \frac{1}{r^2}\frac{\partial^2 T}{\partial \theta^2}\right)
 $$
 
 The solver uses an explicit Forward-Time, Centered-Space (FTCS) update on a $(N_r, N_\theta)$ grid. The angular direction is periodic, so the implementation uses wrap-around indexing. The inner radial boundary is held at a fixed temperature, and the outer radial boundary applies a Neumann heat-flux condition using a ghost-node formulation.
