@@ -2,7 +2,7 @@
 
 A compact, fully local Python simulation of transient heat diffusion in an F1 brake disc. The model uses a vectorized Finite Difference Method (FDM) with an explicit FTCS scheme in polar coordinates to evolve the temperature field and render a 10-second MP4 animation.
 
-Preview video: [brake_disc_10s.mp4](brake_disc_10s.mp4)
+Preview video: [[brake_disc_10s.mp4](brake_disc_10s.mp4)](https://github.com/user-attachments/assets/86b498da-6611-4580-9641-7eac6705f6c3)
 
 ## Physics & Math
 
