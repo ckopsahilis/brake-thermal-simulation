@@ -102,7 +102,7 @@ def save_temperature_video(frames, r, dtheta, t_max, output_path="brake_disc_10s
 
     # Build a fixed output timeline so file duration is exactly t_max seconds.
     src_frames = frames.shape[0]
-    fps = 12
+    fps = 30
     out_frames = max(2, int(round(t_max * fps)))
     sample_idx = np.linspace(0, src_frames - 1, out_frames).astype(int)
     frames_out = frames[sample_idx]

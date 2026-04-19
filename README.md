@@ -4,10 +4,12 @@ A compact, fully local Python simulation of transient heat diffusion in an F1 br
 
 Preview video:
 
-<video src="https://github.com/user-attachments/assets/86b498da-6611-4580-9641-7eac6705f6c3" controls width="900"></video>
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/881b16d2-c350-45fb-bdae-188a210bc5c4" controls width="900"></video>
+</div>
 
 If the embedded player does not load, open the video directly:
-[Watch preview video](https://github.com/user-attachments/assets/86b498da-6611-4580-9641-7eac6705f6c3)
+[Watch preview video](https://github.com/user-attachments/assets/881b16d2-c350-45fb-bdae-188a210bc5c4)
 
 ## Physics & Math
 
